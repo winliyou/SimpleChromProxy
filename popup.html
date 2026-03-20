@@ -9,11 +9,11 @@
     <h2>代理设置</h2>
     <div class="form-group">
       <label for="proxyHost">代理服务器地址：</label>
-      <input type="text" id="proxyHost" placeholder="例如：127.0.0.1">
+      <input type="text" id="proxyHost" placeholder="例如：127.0.0.1" spellcheck="false" autocomplete="off">
     </div>
     <div class="form-group">
       <label for="proxyPort">端口：</label>
-      <input type="number" id="proxyPort" placeholder="例如：8080">
+      <input type="number" id="proxyPort" placeholder="例如：8080" min="1" max="65535" step="1" inputmode="numeric" autocomplete="off">
     </div>
     <div class="form-group">
       <label for="proxyType">代理类型：</label>
@@ -26,6 +26,8 @@
       <button id="saveProxy">保存设置</button>
       <button id="clearProxy">清除代理</button>
     </div>
+    <div id="proxyState" class="info"></div>
+    <div id="controlState" class="info"></div>
     <div id="status" class="status"></div>
   </div>
   <script src="popup.js"></script>

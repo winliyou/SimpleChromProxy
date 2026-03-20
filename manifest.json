@@ -4,12 +4,7 @@
   "version": "1.0",
   "description": "一个简单的Chrome代理设置插件",
   "permissions": [
-    "proxy",
-    "storage",
-    "system.display"
-  ],
-  "host_permissions": [
-    "<all_urls>"
+    "proxy"
   ],
   "action": {
     "default_popup": "popup.html",
@@ -28,4 +23,4 @@
     "service_worker": "background.js",
     "type": "module"
   }
-} 
+}

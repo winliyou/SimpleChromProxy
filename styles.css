@@ -26,7 +26,8 @@ label {
   color: #666;
 }
 
-input, select {
+input,
+select {
   padding: 8px;
   border: 1px solid #ddd;
   border-radius: 4px;
@@ -54,6 +55,11 @@ button:hover {
   background-color: #45a049;
 }
 
+button:disabled {
+  background-color: #bdbdbd;
+  cursor: not-allowed;
+}
+
 #clearProxy {
   background-color: #f44336;
 }
@@ -62,11 +68,34 @@ button:hover {
   background-color: #da190b;
 }
 
+#clearProxy:disabled {
+  background-color: #d9a3a0;
+}
+
+.info,
 .status {
   margin-top: 10px;
   padding: 8px;
   border-radius: 4px;
   font-size: 14px;
+}
+
+.info {
+  background-color: #f5f5f5;
+  color: #333;
+}
+
+.info.success {
+  background-color: #dff0d8;
+  color: #3c763d;
+}
+
+.info.warning {
+  background-color: #fff3cd;
+  color: #856404;
+}
+
+.status {
   display: none;
 }
 
@@ -80,4 +109,4 @@ button:hover {
   display: block;
   background-color: #f2dede;
   color: #a94442;
-} 
+}
